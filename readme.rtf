@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Georgia;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 *****************************\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Tam Le\
+RIKEN AIP\
+October 24th, 2019\
+tam.le@riken.jp\
+*****************************\
+\
+Matlab code for tree-Wasserstein distance in the paper:\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://arxiv.org/pdf/1902.00342.pdf"}}{\fldrslt 
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Tree-Sliced Variants of Wasserstein Distances}}
+\f1 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \
+Neural Information Processing Systems (
+\b NeurIPS/NIPS
+\b0 ), 2019.\
+
+\b Tam Le
+\b0 , Makoto Yamada, Kenji Fukumizu, Marco Cuturi
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+@ Third party toolbox for the farthest-point clustering\
++ figtreeKCenterClustering.m\
+And mex-File for MAC and LINUX\
+\
+@ Illustrated data:\
++ Subset_200.mat: containing 200 empirical measures\
++ Subset_1000.mat: containing 1000 empirical measures\
+\
+@ Main functions for computing tree-Wasserstein distance\
++ BuildTreeMetric_HighDim_V2.m: build tree metric from input empirical measures by using the farthest-point clustering approach\
++ TreeMapping.m: tree representation vectors for new input empirical measure data.\
+\
+@ Examples:\
++ testTreeWasserstein1.m: using empirical measures from Subset_1000.mat to construct tree metric, then compute tree-Wasserstein distance matrix for the same empirical measures from Subset_1000.mat.\
++ testTreeWasserstein2.m: using empirical measures from Subset_200.mat to construct tree metric, then compute tree-Wasserstein distance matrix for new input empirical measure data from Subset_1000.mat\
+\
+\
+\
+}
